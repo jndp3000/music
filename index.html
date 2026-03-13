@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈奕迅 - 新闻女郎</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .music-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 420px;
+            width: 100%;
+        }
+        .song-title {
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .singer {
+            font-size: 18px;
+            color: #a0a0b0;
+            margin-bottom: 40px;
+        }
+        audio {
+            width: 100%;
+            height: 50px;
+            border-radius: 12px;
+            outline: none;
+        }
+        .tips {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="music-card">
+        <div class="song-title">新闻女郎</div>
+        <div class="singer">陈奕迅</div>
+        <!-- 音频播放器：请把你的MP3文件和这个html放在同一个文件夹 -->
+        <audio controls>
+            <source src="陳奕迅+-+新聞女郎+.mp3" type="audio/mpeg">
+            你的浏览器不支持音频播放
+        </audio>
+        <div class="tips">✅ 把MP3和本网页放在同一文件夹即可播放</div>
+    </div>
+</body>
+</html>
